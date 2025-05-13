@@ -69,7 +69,16 @@ const App = () => {
 
   const downloadQR = () => {
     if (!dataURL) return;
-    download(dataURL, 'qr-code.png', 'image/png');
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
+  if (isMobile) {
+    window.open(dataURL, '_blank');
+  } else {
+    const link = document.createElement('a');
+    link.href = dataURL;
+    link.download = 'qr-code.png';
+    link.click();
+  }
   };
 
   const handleSubmit = async (e) => {
