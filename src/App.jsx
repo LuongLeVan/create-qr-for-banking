@@ -100,7 +100,7 @@ const App = () => {
       } `}
     >
       <div className="p-10 rounded-[20px] md:border lg:border w-[550px] ">
-        <h1 className="text-center mb-6 font-semibold text-[28px] bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">
+        <h1 className="text-center mb-6 font-semibold text-[24px] md:text-[28px] lg:text-[28px] bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">
           TẠO MÃ QR THANH TOÁN
         </h1>
 
@@ -193,10 +193,10 @@ const App = () => {
               className="mt-10 mx-auto rounded-lg"
             />
             <div className="mt-4 px-5 ml-6 md:ml-0 lg:ml-0">
-              <button className="p-3 w-32 rounded-md md:w-52 lg:w-52 text-white bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold"
+              <button className="p-3 w-28 text-[14px] md:text-[16px] lg:text-[16px] rounded-md md:w-52 lg:w-52 text-white bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold"
                 onClick={downloadQR}
               >Tải xuống</button>
-              <button className="p-3 w-32 rounded-md md:w-52 lg:w-52 ml-3 text-white bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold" 
+              <button className="p-3 w-28 text-[14px] md:text-[16px] lg:text-[16px] rounded-md md:w-52 lg:w-52 ml-3 text-white bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold" 
                 onClick={() => handleCopy(contentCopy)}
               >Sao chép</button>
             </div>
