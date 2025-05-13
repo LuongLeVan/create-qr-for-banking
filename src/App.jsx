@@ -192,7 +192,7 @@ const App = () => {
               alt="QR Code"
               className="mt-10 mx-auto rounded-lg"
             />
-            <div className="mt-4 px-5 ml-6 md:ml-0 lg:ml-0">
+            <div className="mt-4 flex px-5">
               <button className="p-3 w-28 text-[14px] md:text-[16px] lg:text-[16px] rounded-md md:w-52 lg:w-52 text-white bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold"
                 onClick={downloadQR}
               >Tải xuống</button>
